@@ -36,3 +36,7 @@ models:
       +materialized: table
     src:
       +materialized: ephemeral
+
+data_tests:
+  +store_failures: true
+  +schema: test_failures  # define my own schema name in stead of the deault name [DEV_]DBT_TEST__AUDIT
