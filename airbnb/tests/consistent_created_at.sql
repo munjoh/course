@@ -1,4 +1,4 @@
-/* My try
+/* My try 
 select l.listing_id, l.created_at, r.review_date
 from {{ref('dim_listings_cleansed')}} l, {{ref('fct_reviews')}} r
 where l.listing_id = r.listing_id 
